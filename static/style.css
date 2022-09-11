@@ -1,0 +1,113 @@
+body {
+    background-color: whitesmoke;
+    margin: 2.5rem;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Rockwell', sans-serif;
+    margin-top: 2.5rem;
+    margin: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Rockwell', sans-serif;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+
+.container {
+    list-style: none ;
+    display: inline-block;
+    background-color: #54a9eb;
+    grid-template-columns: repeat( auto-fill, minmax(220px, 1fr));
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    position: relative;
+    transform: skewY(0deg);
+    transition: 0.3s;
+    text-align: justify;
+    font-family: 'Rockwell', sans-serif;
+    font-size: large;
+    border-radius: 8px;
+    align-items:center;
+    justify-content:center;
+}
+
+ul {
+    position: relative;
+    list-style: none;
+    border: 5px solid #54a9eb;
+    padding: 15px;
+    z-index: var(--i);
+    border-radius: 8px;
+}
+
+
+
+/*Important for the hover effect
+Y: down, X: */
+
+dt {
+    margin: 6px;
+    border: 1px, solid, black;
+}
+
+
+dt:hover{
+    transform: skewY(10deg);
+    color:  white;
+    transform: translateY(-5px);
+    transition: 0.3s;
+    /* transform: rotate3d(1, 2, 1, -5deg); */
+    /* zoom: 110%; */
+}
+
+dt:hover::after{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 100%;
+    height: 100%;
+    /* background: #6e95e0; */
+    transform: translateY(5px);
+    transition: 0.3s;
+}
+
+button {
+    background: transparent;/* Green */;
+    border: none;
+    margin-left: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+button:hover {
+    background-color: #54a9eb;
+    color: white;
+    
+}
+
+p {
+    font-family: 'Rockwell', sans-serif;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.footer {
+    position: float;
+    margin-top: 5rem;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}

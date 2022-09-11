@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="static/style.css" rel="stylesheet">
+    <link rel="icon" href="static/images/favicon.ico" type="image/x-icon">
+    <title>Crypto Values</title>
+</head>
+<div>
+    <h1 class="title">Simple web app displaying some crypto current values.</h1>
+
+    <div>
+        <h3>Do you want to get this data in json format?
+        <button class="link-json"><a href="/api/v1/resources/cripto/all"><h1>{ }</h1><h4>click</h4></a></button>
+        <!-- <button><a href="/api/v1/resources/cripto/all"><img src="static/images/app-json-icon.png" alt="json icon" width="50" height="50"></a></button></h3> -->
+    </div>
+
+    <div class="container">
+    <ul>
+        <h2>1 BTC</h2>
+        {% for key, value in btc_values.items() %}
+            {% if key != 'BTC' %}
+                <dt>{{ key }} : {{ value }}</dt>
+            {% endif %}
+        {% endfor %}
+    </ul>
+    </div>
+    <div class="container">
+    <ul>
+        <h2>1 ETH</h2>
+        {% for key, value in eth_values.items() %}
+            {% if key != 'ETH' %}
+                <dt>{{ key }} : {{ value }}</dt>
+            {% endif %}
+        <!-- <dd>{{ value }}</dd> -->
+        {% endfor %}
+    </ul>
+    </div>
+    
+    <div class="container">
+    <ul>
+        <h2>1 BNB</h2>
+        {% for key, value in bnb_values.items() %}
+            {% if key != 'BNB' %}
+                <dt>{{ key }} : {{ value }}</dt>
+            {% endif %}
+        {% endfor %}
+    </ul>
+    </div>
+    <div class="container">
+    <ul>
+        <h2>1 BCH</h2>
+        {% for key, value in bch_values.items() %}
+            {% if key != 'BCH' %}
+                <dt>{{ key }} : {{ value }}</dt>
+            {% endif %}
+        {% endfor %}
+    </ul>
+    </div>
+    <div class="container">
+    <ul>
+        <h2>1 LINK</h2>
+        {% for key, value in link_values.items() %}
+            {% if key != 'LINK' %}
+                <dt>{{ key }} : {{ value }}</dt>
+            {% endif %}
+        {% endfor %}
+    </ul>
+    </div>
+    <div class="container">
+    <ul>
+        <h2>1 LUNA</h2>
+        {% for key, value in luna_values.items() %}
+            {% if key != 'LUNA' %}
+                <dt>{{ key }} : {{ value }}</dt>
+            {% endif %} 
+        {% endfor %}
+    </ul>
+    </div>
+    <div class="container">
+    <ul>
+        <h2>1 ATOM</h2>
+        {% for key, value in atom_values.items() %}
+            {% if key != 'ATOM' %}
+                <dt>{{ key }} : {{ value }}</dt>
+            {% endif %}
+        {% endfor %}
+    </ul>
+    </div>
+    <div class="container">
+    <ul>
+        <h2>1 SOL</h2>
+        {% for key, value in sol_values.items() %}
+            {% if key != 'SOL' %}
+                <dt>{{ key }} : {{ value }}</dt>
+            {% endif %}
+        {% endfor %}
+    </ul>
+    </div>
+    <div class="container">
+    <ul>
+        <h2>1 USDT</h2>
+        {% for key, value in usdt_values.items() %}
+            {% if key != 'USDT' %}
+                <dt>{{ key }} : {{ value }}</dt>
+            {% endif %}
+        {% endfor %}
+    </ul>
+    </div>
+    <div class="container">
+    <ul>
+        <h2>1 EUR</h2>
+        {% for key, value in eur_values.items() %}
+            {% if key != 'EUR' %}
+                <dt>{{ key }} : {{ value }}</dt>
+            {% endif %}
+        {% endfor %}
+    </ul>
+    </div>
+
+<!--    <div class="container">-->
+<!--        <ul>-->
+<!--            <h4> Rate EUR/DOLLAR </h4>-->
+<!--            <dt> {{ price }} </dt>-->
+<!--        </ul>-->
+<!--    </div>-->
+
+<div class="footer">
+<p>Copyright &copy; 2022 Irene AV</p>
+<button><a href="https://github.com/Warszawa1"><img src="static/images/github-link.png" alt="github icon" width="50" height="50"></a></button>
+</div>
+</body>
+</html>
