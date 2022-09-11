@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 from rates import dict_final, btc_values, eth_values, bnb_values, eur_values
 from rates import atom_values, bch_values, luna_values, link_values, sol_values, usdt_values, keys_dict, dictionary, coin_list
-from request_valores import price 
+from beautiful_soup import price 
 app = Flask(__name__)
 
 
