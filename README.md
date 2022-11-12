@@ -1,5 +1,6 @@
 # 10-crypto-real-time-rates
-Simple data source to use with small projects
+
+Data source to use with small projects
 
 Implementing what I have learn about Beautiful Soup so far, to get some crypto data.
 
